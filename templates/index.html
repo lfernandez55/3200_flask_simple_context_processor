@@ -1,9 +1,22 @@
-In my index page. . . .{{myexample}}
-<br>
-{% if isAdmin('luke') %}
-  Output this if the input to the context process is luke....
+In my index page: 
+<br><br>
+
+
+
+
+
+<h2>A super simple context processor example:</h2>
+<br><br>
+{{myexample}}
+<br><br>
+
+
+<h2>Another context processor:</h2>
+<br><br>
+{% if isLuke('luke') %}
+  Output this if the input to the context process is Luke....
 {% endif %}
-<br>
-{% if isAdmin('susan') %}
-  Output this if the input to the context process is luke....
+<br><br>
+{% if isLuke('susan') %}
+  Output this if the input to the context process is Luke (this won't be outputted because the input is Susan) ....
 {% endif %}
